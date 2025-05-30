@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/city_error"
+        android:id="@+id/cityImageAccount"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/playercity"
+            android:textColor="@color/white"
+            android:textSize="23sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:id="@+id/cityNameAccount"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/error555"
+                android:textColor="#9F9F9F"
+                android:textSize="15sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:id="@+id/cityCoordAccount" />
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/membe"
+            android:textColor="#9F9F9F"
+            android:textSize="15sp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/cityRoleAccount" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

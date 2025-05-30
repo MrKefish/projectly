@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:fillViewport="true"
+    tools:context=".AccountFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="90dp"
+        android:background="@drawable/round_bounds"
+        android:id="@+id/linearLayoutAccountFragment">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <ImageView
+                android:id="@+id/profileImageAccountFragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/account_profile_image"
+                android:src="@drawable/account_box_160"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/round_bounds_playernamelayout"
+                android:id="@+id/linearLayoutInfoAccountFragment">
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/playerNameText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/zain_regular"
+                    android:textColor="@color/white"
+                    android:text="@string/playername"
+                    android:textSize="50sp"/>
+                <TextView
+                    android:id="@+id/playerNameStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:fontFamily="@font/commissioner_light"
+                    android:text="@string/playerRole"
+                    android:textColor="#FFF777"
+                    android:textSize="17sp" />
+                <TextView
+                    android:id="@+id/playerEnteringDay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:fontFamily="@font/zain_extralight"
+                    android:text="@string/dayOfEntering"
+                    android:textSize="17sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/accountCitiesText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cities"
+            android:textSize="30sp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/commissioner_light"
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/accountCitiesListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:background="#00000000"
+            android:cacheColorHint="#00000000"
+            android:divider="@null" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/playerCards"
+            android:textSize="30sp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/commissioner_light"
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/accountCardsListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:background="#00000000"
+            android:cacheColorHint="#00000000"
+            android:divider="@null" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

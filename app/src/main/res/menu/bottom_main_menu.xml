@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/profileTab"
+        android:title="Account"
+        android:icon="@drawable/account_sircle"/>
+    <item
+        android:id="@+id/walletTab"
+        android:title="Wallet"
+        android:icon="@drawable/wallet"/>
+    <item
+        android:id="@+id/propertiesTab"
+        android:title="Properties"
+        android:icon="@drawable/outline_widgets"/>
+</menu>

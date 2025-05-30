@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/dialogBackground"
+    android:layout_margin="15dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/transactionDoneTitle"
+        android:textSize="20sp"
+        android:layout_marginStart="15dp"
+        android:textColor="#4CAF50"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/walletTransactionDoneTitle"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/walletTransactionDoneMessage"
+        android:textSize="15sp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/walletTransactionDoneTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/walletTransactionDoneMessage"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ok_button"
+        app:layout_constraintTop_toBottomOf="@id/walletTransactionDoneMessage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/OK"
+        android:textSize="15sp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        app:backgroundTint="@null"
+        android:textColor="@color/white"
+        android:id="@+id/walletTransactionDoneOk" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

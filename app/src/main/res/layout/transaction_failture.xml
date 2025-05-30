@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/dialogBackground"
+    android:layout_margin="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/transactionFailtureTitle"
+        android:textSize="20sp"
+        android:layout_marginStart="15dp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/walletTransactionTitle"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/transactionFailtureMessage"
+        android:textSize="15sp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/design_default_color_error"
+        app:layout_constraintTop_toBottomOf="@id/walletTransactionTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/walletTransactionFailtureWarning"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/errorIDK"
+        android:textSize="15sp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#B6B6B6"
+        app:layout_constraintTop_toBottomOf="@id/walletTransactionFailtureWarning"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/walletTransactionFailtureError"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ok_button"
+        app:layout_constraintTop_toBottomOf="@id/walletTransactionFailtureError"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/OK"
+        android:textSize="15sp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        app:backgroundTint="@null"
+        android:textColor="@color/white"
+        android:id="@+id/walletTransactionFailtureOk" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

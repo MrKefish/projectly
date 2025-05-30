@@ -1,0 +1,20 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:cacheColorHint="#00000000">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/simple_stroke_spinner_item"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:layout_margin="20dp"
+            android:id="@+id/walletAccountTransactionSpinnerItemName"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
