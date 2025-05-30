@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.SPWallet" parent="Theme.Material3.DynamicColors.Dark.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.SPWallet" parent="Base.Theme.SPWallet" />
+    <style name="segmented_button_left" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:background">@drawable/segmented_button_left</item>
+    </style>
+    <style name="segmented_button_right" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:background">@drawable/segmented_button_right</item>
+    </style>
+</resources>
